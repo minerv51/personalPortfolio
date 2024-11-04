@@ -1,0 +1,47 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2dvh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroBanner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E5E9F0;
+    color: #1B2A41;
+    height: 85dvh;
+    overflow: hidden;
+}
+
+.bannerText {
+    width: 45%;
+    margin-left: 5dvw;
+}
+
+.bannerText a{
+    text-decoration: none;
+    color: #1B2A41;
+    border: 2px solid #1B2A41;
+    border-radius: 3dvh;
+    padding: 1dvh 3dvh;
+}
+
+.bannerText a:hover{
+    text-decoration: none;
+    color: #1B2A41;
+    border: 2px solid #1B2A41;
+    border-radius: 3dvh;
+    padding: 1dvh 3dvh;
+    box-shadow: 0 0 20px rgba(172, 130, 5, 1);
+}
+
+.heroImage {
+    width: 50%;
+    height: auto;
+    /*-webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);*/
+    /*mask-image: linear-gradient(to bottom, black 65%, transparent 100%);*/
+}

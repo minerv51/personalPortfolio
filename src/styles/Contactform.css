@@ -1,0 +1,117 @@
+.contactForm {
+    background-color: #E5E9F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5dvh;
+    color: #1B2A41;
+    height: 120dvh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formTitle {
+    padding: 3dvh;
+}
+
+.client-info-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5dvh;
+    width: 50dvw;
+    border: transparent;
+    padding: 4dvh;
+    border-radius: 5dvh;
+    box-shadow: 2dvh 2dvh 2dvh 2dvh rgba(0, 0, 0, 0.3);
+}
+
+#name {
+    width: 45.2dvw;
+}
+
+#email, #phoneNum {
+    width: 30dvw;
+}
+
+#name, #email, #phoneNum {
+    border: transparent;
+    border-radius: 2dvh;
+    line-height: 4dvh;
+    padding-left: 1dvw;
+    color: #1B2A41;
+}
+
+#name::placeholder, #email::placeholder, #phoneNum::placeholder, #message::placeholder {
+    color: #1B2A41;
+}
+
+.emailPhoneNum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3dvw;
+    width: 100%;
+}
+
+#reason {
+    width: 45.2dvw;
+    border: transparent;
+    border-radius: 2dvh;
+    height: 4dvh;
+    padding: 0dvw 1dvw;
+    color: #1B2A41;
+}
+
+#referral {
+    width: 45.2dvw;
+    border: transparent;
+    border-radius: 2dvh;
+    height: 4dvh;
+    padding: 0dvw 1dvw;
+    color: #1B2A41;
+}
+
+#message {
+    width: 45.2dvw;
+    border: transparent;
+    border-radius: 2dvh;
+    height: 12dvh;
+    padding: 1dvw 1dvw;
+}
+
+.consent-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4dvw;
+    font-size: 1.5dvh;
+}
+
+.submit-reset {
+    display: flex;
+    flex-direction: row;
+    gap: 2dvw;
+}
+
+#submit, #reset {
+    border: transparent;
+    border-radius: 2dvh;
+    padding: 0.75dvw 4dvw;
+    background-color: white;
+    color: #1B2A41;
+}
+
+#submit:hover, #reset:hover {
+    cursor: pointer;
+    color: #AC8205;
+}

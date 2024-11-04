@@ -1,0 +1,15 @@
+.experience {
+    padding: 5dvh 0dvh;
+    height: auto;
+    text-align: center;
+    background-color: #E5E9F0;
+    color: #1B2A41;
+}
+
+.experienceContainer {
+    margin: auto;
+    margin-top: 3dvh;
+    text-align: left;
+    width: 50%;
+    color: #1B2A41;
+}

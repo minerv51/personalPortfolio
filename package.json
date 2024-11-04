@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio-website",
   "private": true,
-  "homepage": "https://minerv51.github.io/personalPortfolio",
+  "homepage": "https://minerv51.github.io/personalPortfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

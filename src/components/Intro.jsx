@@ -1,6 +1,6 @@
 import '../styles/Intro.css'
 import aboutImage from '../assets/IMG_4251.png';
-import { FiMail } from 'react-icons/fi';
+import { FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
 import { FiPhone } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 
@@ -47,7 +47,15 @@ function Intro() {
                             </tr>
                             <tr>
                                 <td id='icon'><FiLinkedin /></td>
-                                <td id='content'><a href='https://www.linkedin.com/in/ba-minervino' target='_blank' rel="noopener noreferrer">Ben Anthony Minervino</a></td>
+                                <td id='content'><a href='https://www.linkedin.com/in/ba-minervino' target='_blank'>Ben Anthony Minervino</a></td>
+                            </tr>
+                            <tr>
+                                <td id='icon'><FiInstagram /></td>
+                                <td id='content'><a href='https://www.instagram.com/minerv.51/' target='_blank'>@minerv.51</a></td>
+                            </tr>
+                            <tr>
+                                <td id='icon'><FiGithub /></td>
+                                <td id='content'><a href='https://github.com/minerv51' target='_blank'>minerv51</a></td>
                             </tr>
                         </tbody>
                     </table>

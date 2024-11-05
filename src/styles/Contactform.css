@@ -114,4 +114,5 @@
 #submit:hover, #reset:hover {
     cursor: pointer;
     color: #AC8205;
+    background-color: #f5f5f5;
 }

@@ -1,0 +1,39 @@
+.resumeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E9F0;
+    color: #1B2A41;
+    height: 85dvh;
+}
+
+.resumeTitle {
+    text-align: center;
+    padding-bottom: 2dvh;
+}
+
+.iframe {
+    width: 65dvw;
+    height: 60dvh;
+}
+
+.resumeDownload {
+    padding: 3dvh 0dvh;
+}
+
+#downloadButton {
+    padding: 1dvh 2dvh;
+    border-radius: 2dvh;
+    border: transparent;
+    background-color: #637da5;
+    color: #E5E9F0;
+    font-weight: 550;
+    font-size: 2.5dvh;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#downloadButton:hover {
+    background-color: #AC8205;
+    cursor: pointer;
+}

@@ -48,17 +48,17 @@ const ContactForm = () => {
                     <h1 id='formTitle'>Get In Touch</h1>
 
                     <div className='name'>
-                        <input id="name" type="text" name="name" placeholder='Full-Name' value={formData.name} onChange={handleChange} />   
+                        <input required id="name" type="text" name="name" placeholder='Full-Name' value={formData.name} onChange={handleChange} />   
                     </div>
 
                     <div className='emailPhoneNum'>
-                        <input id="email" type="text" name="email" placeholder='Email' value={formData.email} onChange={handleChange} />
+                        <input required id="email" type="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} />
                         
-                        <input id="phoneNum" type="number" name="phoneNum" placeholder='Phone Number' value={formData.phoneNum} onChange={handleChange} />
+                        <input required id="phoneNum" type="number" name="phoneNum" placeholder='Phone Number' value={formData.phoneNum} onChange={handleChange} />
                     </div>
 
                     <div className='reason'>
-                        <select id="reason" name="reason" placeholder='Reason for Contact' value={formData.reason} onChange={handleChange}>
+                        <select required id="reason" name="reason" placeholder='Reason for Contact' value={formData.reason} onChange={handleChange}>
                             <option value="placeholder">Reason for Contact</option>
                             <option value="inquiry">General Inquiry</option>
                             <option value="job">Job Opportunity</option>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                     </div>
 
                     <div className='referral'>
-                        <select id="referral" name="referral" value={formData.referral} onChange={handleChange}>
+                        <select required id="referral" name="referral" value={formData.referral} onChange={handleChange}>
                             <option value="referralPlace">How Did You Hear About Me?</option>
                             <option value="linkedin">LinkedIn</option>
                             <option value="instagram">Instagram</option>
@@ -80,6 +80,7 @@ const ContactForm = () => {
 
                     <div className='message'>
                         <textarea
+                            required
                             id="message"
                             name="message"
                             rows="4"
@@ -91,7 +92,7 @@ const ContactForm = () => {
 
                     <div className="consent-button">
                         <label htmlFor="consent">I agree to be contacted for a follow-up</label>
-                        <input id="consent" name="consent" type="checkbox" checked={formData.consent} onChange={handleChange} />
+                        <input required id="consent" name="consent" type="checkbox" checked={formData.consent} onChange={handleChange} />
                     </div>
 
                     <div className="submit-reset">

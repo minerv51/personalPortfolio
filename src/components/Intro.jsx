@@ -4,7 +4,6 @@ import { FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
 import { FiPhone } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 
-
 function Intro() {
     
     return (
@@ -30,7 +29,7 @@ function Intro() {
                     <br/>
                 </div>
                 <div className='aboutImage'>
-                    <img id='groupImage' src={aboutImage}/>
+                    <img id='groupImage' src={aboutImage} alt="A circularly framed photo of a group of four friends smiling, they are dressed in formal attire at an indoor event with festive background decorations."/>
                 </div>
                 <div className='contactInfo'>
                     <h3 id='segmentTitle'>Contact Information</h3>

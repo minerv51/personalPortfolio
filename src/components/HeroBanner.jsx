@@ -20,7 +20,7 @@ function HeroBanner() {
                 <br/>
                 <h3><Link to="/resume">See My Resume</Link></h3>
             </div>
-            <img className='heroImage' src={heroImage} />
+            <img className='heroImage' src={heroImage} alt="A portrait of a man with slicked back dark hair, a trimmed beard, wearing a light blue-green shirt with a transparent bacground." />
         </div>
     )
 }

@@ -1,0 +1,103 @@
+.portfolio {
+    background-color: #E5E9F0;
+}
+
+.portfolioTabs {
+    padding-top: 1dvh;
+    padding-bottom: 2dvh;
+    background-color: #E5E9F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tabButton {
+    padding: 1dvh 1dvw;
+    border-radius: 1dvh;
+    width: 20%;
+    background-color: transparent;
+    border: 2px solid #1B2A41;
+    color: #1B2A41;
+    font-weight: bold;
+}
+
+.tabButton:hover {
+    cursor: pointer;
+    border-color: #AC8205;
+    color: #AC8205;
+}
+
+.tabButton[aria-selected="true"] {
+    border-color: #AC8205;
+    color: #AC8205;
+  }
+
+.portfolioContent {
+    padding: 10dvh 0dvw;
+    background-color: #E5E9F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.codingCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8dvw;
+}
+
+.siteCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+#portfolioLogo {
+    padding: 3dvh 0dvw;
+    height: 40dvh;
+}
+
+.visitSiteButton {
+    text-decoration: none;
+    list-style: none;
+    color: #1B2A41;
+    padding: 1dvh;
+    border: 2px solid #1B2A41;
+    border-radius: 1dvh;
+    width: 15dvw;
+}
+
+.visitSiteButton:hover{
+    color: #AC8205;
+    border-color: #AC8205;
+    cursor: pointer;
+}
+
+.photographyCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20dvh;
+}
+
+.professionalGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2dvw;
+    padding: 3dvh 3dvh;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1B2A41;
+    border-radius: 2dvh;
+}
+
+.otherCards {
+    height: 60dvh;
+}

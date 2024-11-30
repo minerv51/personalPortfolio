@@ -46,15 +46,15 @@ function Intro() {
                             </tr>
                             <tr>
                                 <td id='icon'><FiLinkedin /></td>
-                                <td id='content'><a href='https://www.linkedin.com/in/ba-minervino' target='_blank'>Ben Anthony Minervino</a></td>
+                                <td id='content'><a href='https://www.linkedin.com/in/ba-minervino' target='_blank' aria-label='Opens in a new tab'>Ben Anthony Minervino</a></td>
                             </tr>
                             <tr>
                                 <td id='icon'><FiInstagram /></td>
-                                <td id='content'><a href='https://www.instagram.com/minerv.51/' target='_blank'>@minerv.51</a></td>
+                                <td id='content'><a href='https://www.instagram.com/minerv.51/' target='_blank' aria-label='Opens in a new tab'>@minerv.51</a></td>
                             </tr>
                             <tr>
                                 <td id='icon'><FiGithub /></td>
-                                <td id='content'><a href='https://github.com/minerv51' target='_blank'>minerv51</a></td>
+                                <td id='content'><a href='https://github.com/minerv51' target='_blank' aria-label='Opens in a new tab'>minerv51</a></td>
                             </tr>
                         </tbody>
                     </table>

@@ -1,18 +1,17 @@
 import '../styles/MySkills2.0.css'
 import { FaReact, FaPython } from 'react-icons/fa';
-import { SiMicrosoftExcel, SiAdobephotoshop } from 'react-icons/si';
-
+import { SiMicrosoftexcel, SiAdobecreativecloud } from 'react-icons/si';
 
 function MySkills2 () {
 
     return(
         <div className='mySkills2'>
-            <h1 id='skillTitle'>My Professional Skills</h1>
+            <h1 id='skillTitle'>My Technical Skills</h1>
             <div className='skillList'>
-                <FaReact size={250} color="black" title='React' />
-                <FaPython size={250} color='black' title='Python' />
-                <SiAdobephotoshop size={250} color='black' title='Adobe' />
-                <SiMicrosoftExcel size={250} color='black' title='Excel' />
+                <FaReact size={250} color="black" title='React' className='technicalIcon' />
+                <FaPython size={250} color='black' title='Python' className='technicalIcon' />
+                <SiMicrosoftexcel size={250} color='black' title='Microsoft Excel' className='technicalIcon' />
+                <SiAdobecreativecloud size={250} color='black' title='Adobe Creative Cloud' className='technicalIcon' />
             </div>
         </div>
     )

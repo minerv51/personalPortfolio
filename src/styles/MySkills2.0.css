@@ -9,3 +9,21 @@
 #skillTitle {
     padding-bottom: 4dvh;
 }
+
+.skillList {
+    padding-top: 2dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6dvw;
+}
+
+.technicalIcon {
+    border: 5px solid #1B2A41;
+    padding: 4dvh;
+    border-radius: 2dvh;
+}
+
+.technicalIcon:hover {
+    cursor: pointer;
+}

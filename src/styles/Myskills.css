@@ -21,3 +21,15 @@
     padding: 5dvh 0dvh;
 }
 
+
+
+/*Styling for small phones*/
+@media (max-width: 700px) {
+    #skillsTitle {
+        font-size: 1.5rem;
+    }
+
+    .progressBar {
+        font-size: 0.75rem;
+    }
+}

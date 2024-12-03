@@ -13,3 +13,17 @@
     width: 50%;
     color: #1B2A41;
 }
+
+
+
+/*Styling for small phones*/
+@media (max-width: 700px) {
+    .experience {
+        font-size: 0.75rem;
+        padding: 0;
+    }
+
+    .experienceContainer {
+        width: 95%;
+    }
+}

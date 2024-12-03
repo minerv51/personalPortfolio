@@ -8,7 +8,7 @@ function Intro() {
     
     return (
         <div className='introSection'>
-            <h1>About Me</h1>
+            <h1 className='introSectTitle'>About Me</h1>
             <div className='aboutMe'>
                 <div className='introBody'>
                     <h3 id='segmentTitle'>

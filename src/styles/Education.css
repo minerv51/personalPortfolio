@@ -36,3 +36,35 @@
     line-height: 3.5dvh;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
+
+
+
+/*Styling for small phones*/
+@media (max-width: 700px) {
+    .myEdSection {
+        padding: 8dvh 0dvw;
+    }
+
+    .education {
+        margin: 0;
+        font-size: 0.75rem;
+    }
+
+    .highSchool {
+        width: 95%;
+        line-height: 3dvh;
+        height: 20dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .university {
+        width: 95%;
+        line-height: 3dvh;
+        height: 20dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -46,3 +46,23 @@
     /*-webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);*/
     /*mask-image: linear-gradient(to bottom, black 65%, transparent 100%);*/
 }
+
+
+
+/*Styling for small phones*/
+@media (max-width: 700px) {
+    .heroBanner {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 85dvh;
+    }
+
+    .bannerText {
+        font-size: 0.5rem;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+}

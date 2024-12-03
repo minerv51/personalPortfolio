@@ -37,3 +37,16 @@
     background-color: #AC8205;
     cursor: pointer;
 }
+
+
+
+@media (max-width: 700px) {
+    .resumeTitle {
+        font-size: 0.75rem;
+        padding: 2dvh;
+    }
+
+    .iframe {
+        width: 85dvw;
+    }
+}

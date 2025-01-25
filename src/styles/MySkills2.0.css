@@ -3,27 +3,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8dvh 0dvw;
 }
 
 #skillTitle {
-    padding-bottom: 4dvh;
+    padding-top: 15dvh;
+    padding-bottom: 2dvh;
 }
 
 .skillList {
-    padding-top: 2dvh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     gap: 6dvw;
 }
 
-.technicalIcon {
-    border: 5px solid #1B2A41;
+#interpersonalSkillList {
+    padding-bottom: 20dvh;
+}
+
+.icon {
     padding: 4dvh;
     border-radius: 2dvh;
 }
 
-.technicalIcon:hover {
+.icon:hover {
     cursor: pointer;
 }
+
+.iconText {
+    text-align: center;
+    font-weight: 500;
+    color: #1B2A41;
+}
+
+.skillContainer {
+    display: flex;
+    flex: 1 1 15%;
+    max-width: 15%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillContainer:hover {
+    cursor: pointer;
+}
+
+.skillContainer:hover .icon,
+.skillContainer .iconText{
+    color: #AC8205 !important;
+}
+
+.skillContainer:not(:hover) .iconText{
+    color: #1B2A41 !important;
+}
+
+

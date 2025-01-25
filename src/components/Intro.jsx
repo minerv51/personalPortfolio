@@ -38,11 +38,11 @@ function Intro() {
                         <tbody>
                             <tr>
                                 <td id='icon'><FiMail /></td>
-                                <td id='content'>bminervino@torontomu.ca</td>
+                                <td id='content'>baminervino@hotmail.com</td>
                             </tr>
                             <tr>
                                 <td id='icon'><FiPhone /></td>
-                                <td id='content'>+1 (999) 999-9999</td>
+                                <td id='content'>+1 (647) 299-6274</td>
                             </tr>
                             <tr>
                                 <td id='icon'><FiLinkedin /></td>

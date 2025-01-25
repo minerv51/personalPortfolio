@@ -112,3 +112,40 @@
 
     
 }
+
+/*Styling for tablets*/
+@media (min-width: 700px) and (max-width: 1364px) {
+
+    .introSection {
+        height: 125dvh;
+    }
+
+    .introSectTitle {
+        padding: 4dvh 0dvw;
+    }
+
+    .aboutMe {
+        flex-wrap: wrap;
+        gap: 8dvh;
+        padding-top: 0dvh;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .introBody {
+        flex-wrap: wrap;
+        order: 3;
+        width: 90%;
+        margin-bottom: 10dvh;
+    }
+
+    .aboutImage {
+        order: 1;
+    }
+
+    .contactInfo {
+        order: 2;
+    }
+
+    
+}

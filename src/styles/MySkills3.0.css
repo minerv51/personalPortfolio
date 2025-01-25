@@ -1,0 +1,29 @@
+.mySkills3 {
+    background-color: #E5E9F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8dvh 0dvw;
+}
+
+.skillsSection {
+    margin: 5dvh 0dvw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+}
+
+.skillTitle {
+    padding: 3dvh 0dvw;
+}
+
+.skillBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 2dvh 3dvw;
+    flex-wrap: wrap;
+    justify-content: center;
+}

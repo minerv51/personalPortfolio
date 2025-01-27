@@ -1,5 +1,5 @@
 import '../styles/MySkills2.0.css'
-import { FaLaptopCode, FaRocket, FaChartBar, FaDatabase, FaShieldAlt, FaUserTie, FaLightbulb, FaHandshake, FaRegClock, FaPuzzlePiece, FaReact, FaPython, FaHtml5, FaCss3, FaComments, FaUsers, FaRecycle, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaLaptopCode, FaRocket, FaChartBar, FaDatabase, FaShieldAlt, FaUserTie, FaLightbulb, FaHandshake, FaRegClock, FaPuzzlePiece, FaReact, FaPython, FaHtml5, FaCss3, FaComments, FaRecycle, FaChalkboardTeacher } from 'react-icons/fa';
 import { SiMicrosoftexcel, SiMicrosoftpowerpoint, SiTableau } from 'react-icons/si';
 
 function MySkills2 () {

@@ -1,7 +1,6 @@
 import '../styles/Intro.css'
-import aboutImage from '../assets/IMG_4251.png';
+import aboutImage from '../assets/IMG_0919.png';
 import { FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
-import { FiPhone } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 
 function Intro() {

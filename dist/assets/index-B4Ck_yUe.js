@@ -8532,7 +8532,6 @@ const ContactForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(emailConfig.serviceID);
     emailjs.send(
       emailConfig.serviceID,
       // Service ID

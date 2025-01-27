@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/Contactform.css';
 import emailjs from 'emailjs-com';
+import { emailConfig } from '../../config';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -24,22 +25,16 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(emailConfig.serviceID); // Debugging
 
-            // Replace these with your actual IDs from EmailJS
-            const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-            const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-            console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
-            console.log(import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-            console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 
             emailjs
                 .send(
-                    serviceID, // Service ID
-                    templateID, // Template ID
+                    emailConfig.serviceID, // Service ID
+                    emailConfig.templateID, // Template ID
                     formData,   // Form data to send
-                    publicKey   // Public Key
+                    emailConfig.publicKey   // Public Key
                 )
                 .then(
                     (result) => {

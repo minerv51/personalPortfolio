@@ -8507,6 +8507,11 @@ const emailjs = {
   send,
   sendForm
 };
+const emailConfig = {
+  serviceID: "service_bdjriwc",
+  templateID: "template_bvdkeiz",
+  publicKey: "gozucmIRgp5AUl6hx"
+};
 const ContactForm = () => {
   const [formData, setFormData] = reactExports.useState({
     name: "",
@@ -8527,20 +8532,15 @@ const ContactForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const serviceID = "service_bdjriwc";
-    const templateID = "template_bvdkeiz";
-    const publicKey = "gozucmIRgp5AUl6hx";
-    console.log("service_bdjriwc");
-    console.log("template_bvdkeiz");
-    console.log("gozucmIRgp5AUl6hx");
+    console.log(emailConfig.serviceID);
     emailjs.send(
-      serviceID,
+      emailConfig.serviceID,
       // Service ID
-      templateID,
+      emailConfig.templateID,
       // Template ID
       formData,
       // Form data to send
-      publicKey
+      emailConfig.publicKey
       // Public Key
     ).then(
       (result) => {

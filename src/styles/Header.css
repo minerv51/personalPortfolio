@@ -58,20 +58,42 @@
     color: #AC8205 !important;
 }
 
+.hamburger {
+    display: none;
+}
+
 
 
 /* Styling for small phones */
 @media (max-width: 700px) {
-    .nav-menu li{
-        padding: none;
-        font-size: 0.55rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
     .nav-name {
         display: none;
     }
+
+    /* Hide the menu on small screens */
+    .nav-menu {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        position: fixed;
+        top: 12%;
+        left: 20%;
+        right: 0;
+        background-color: #E5E9F0;
+        width: 200px;
+        border: 1px solid #1B2A41;
+    }
+
+    /* Display the menu when toggled */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /* Hamburger icon */
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        font-size: 5rem;
+        color: #1B2A41;
+    }
+
 }

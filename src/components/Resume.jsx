@@ -10,12 +10,12 @@ function ResumeSection () {
             </div>
             <div className='resumeFile'>
                 <iframe className='iframe' 
-                    src='https://drive.google.com/file/d/19kb1A0r1I2q1LPyXti91PW5b2eyCAoPOnT4sRiB36mI/preview'
+                    src='https://drive.google.com/file/d/1NSTrvCQE1tB7tW77dBftIZVSHUa0J2nR/preview'
                     title='Resume Preview'
                 />
             </div>
             <div className='resumeDownload'>
-                <a href='/personalPortfolio/resume_school.pdf' download='baminervino-resume.pdf'>
+                <a href='/personalPortfolio/resume.pdf' download='baminervino_resume.pdf'>
                     <button id='downloadButton'>
                         Download Resume
                     </button>

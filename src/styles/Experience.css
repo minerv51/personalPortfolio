@@ -27,3 +27,10 @@
         width: 95%;
     }
 }
+
+/*Styling for iPads*/
+@media (min-width: 700px) and (max-width: 1366px) {
+    .experienceContainer {
+        width: 80%;
+    }
+}

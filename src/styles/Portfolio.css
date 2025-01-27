@@ -23,13 +23,15 @@
 
 .tabButton:hover {
     cursor: pointer;
-    border-color: #AC8205;
-    color: #AC8205;
+    border-color: #1B263B;
+    background-color: #1B263B;
+    color: #FFFFFF;
 }
 
 .tabButton[aria-selected="true"] {
-    border-color: #AC8205;
-    color: #AC8205;
+    border-color: #1B263B !important;
+    background-color: #1B263B !important;
+    color: #FFFFFF;
   }
 
 .portfolioContent {
@@ -54,7 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 100%;
 }
 
 #portfolioLogo {
@@ -73,8 +75,9 @@
 }
 
 .visitSiteButton:hover{
-    color: #AC8205;
-    border-color: #AC8205;
+    color: white;
+    background-color: #1B263B;
+    border-color: #1B263B;
     cursor: pointer;
 }
 

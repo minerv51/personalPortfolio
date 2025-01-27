@@ -8,6 +8,8 @@
 #skillTitle {
     padding-top: 15dvh;
     padding-bottom: 2dvh;
+    color: #1B2A41;
+    text-align: center;
 }
 
 .skillList {
@@ -59,3 +61,16 @@
 }
 
 
+/*Styling for Phones*/
+
+@media (max-width:700px) {
+    .skillContainer {
+        flex: 1 1 50%;
+        max-width: 25%;
+        font-size: 0.6rem;
+    }
+
+    .icon {
+        padding: 6dvh;
+    }
+}

@@ -62,9 +62,20 @@
     color: #1B2A41;
 }
 
-.linksTable a:hover {
-    color: rgba(172, 130, 5, 1);
+.contactRow:hover {
+    color: #AC8205; /* Highlight the row */
+    cursor: pointer; /* Change cursor on hover */
 }
+
+.contactRow:hover #icon svg {
+    color: #AC8205; /* Change icon color on hover */
+}
+
+.contactRow:hover #content a {
+    color: #AC8205 !important; /* Change link text color on hover */
+}
+
+
 
 #icon {
     font-size: 3dvh;
@@ -97,8 +108,11 @@
     }
 
     .introBody {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100dvw;
         text-align: center;
+        align-items: center;
     }
 
     .linksTable{
@@ -110,33 +124,43 @@
         width: 100%;
     }
 
-    
+    .introText {
+        flex-shrink: 0;
+        height: auto;
+        overflow: hidden;
+        white-space: normal;
+        width: 80%;
+        text-align: center;
+    }
 }
 
-/*Styling for tablets*/
-@media (min-width: 700px) and (max-width: 1364px) {
+/*Styling for iPads*/
+@media (min-width: 700px) and (max-width: 1366px) {
 
     .introSection {
-        height: 125dvh;
+        height: 140dvh;
     }
 
     .introSectTitle {
-        padding: 4dvh 0dvw;
+        padding: 0dvh 0dvw;
+    }
+
+    #groupImage {
+        height: 45dvh;
     }
 
     .aboutMe {
         flex-wrap: wrap;
         gap: 8dvh;
-        padding-top: 0dvh;
-        padding-left: 0;
         align-items: center;
     }
 
     .introBody {
+        padding-top: 10dvh;
         flex-wrap: wrap;
         order: 3;
         width: 90%;
-        margin-bottom: 10dvh;
+        font-size: large;
     }
 
     .aboutImage {
@@ -146,6 +170,4 @@
     .contactInfo {
         order: 2;
     }
-
-    
 }

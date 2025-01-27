@@ -63,21 +63,6 @@ function Portfolio () {
 
                         <div className="codingCards">
                             <div className="siteCard">
-                                <h3>Corfinio Revival Website</h3>
-                                <img
-                                src={corfinioLogo}
-                                id="portfolioLogo"
-                                alt="The logo for the City of Corfinio in Abbruzzo, Italy."
-                                ></img>
-                                <a 
-                                    href="https://minerv51.github.io/corfinio_revival/index.html"
-                                    className="visitSiteButton"
-                                    target="_blank"
-                                >
-                                    Visit Site
-                                </a>
-                            </div>
-                            <div className="siteCard">
                                 <h3>Personal Portfolio Website</h3>
                                 <img
                                 src={portrait}

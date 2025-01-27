@@ -16,8 +16,12 @@
     align-items: center;
 }
 
+.altFormTitle {
+    display: none;
+}
+
 #formTitle {
-    padding: 3dvh;
+    padding: 0dvh;
 }
 
 .client-info-inputs {
@@ -45,11 +49,10 @@
     border: transparent;
     border-radius: 2dvh;
     line-height: 4dvh;
-    padding-left: 2dvw;
     color: #1B2A41;
 }
 
-#name::placeholder, #email::placeholder, #phoneNum::placeholder, #message::placeholder {
+#name::placeholder, #email::placeholder, #phoneNum::placeholder, #company::placeholder, #message::placeholder {
     color: #1B2A41;
 }
 
@@ -59,7 +62,15 @@
     justify-content: center;
     align-items: center;
     gap: 3dvw;
-    width: 97.5%;
+    width: 98%;
+}
+
+#company {
+    width: 45.2dvw;
+    border: transparent;
+    border-radius: 2dvh;
+    height: 4dvh;
+    color: #1B2A41;
 }
 
 #reason {
@@ -67,7 +78,6 @@
     border: transparent;
     border-radius: 2dvh;
     height: 4dvh;
-    padding: 0dvh 1dvw;
     color: #1B2A41;
 }
 
@@ -76,7 +86,6 @@
     border: transparent;
     border-radius: 2dvh;
     height: 4dvh;
-    padding: 0dvh 1dvw;
     color: #1B2A41;
 }
 
@@ -85,16 +94,24 @@
     border: transparent;
     border-radius: 2dvh;
     height: 12dvh;
-    padding: 1dvh 2dvw;
+    padding: 1dvh 0dvw;
+}
+
+#name, #email, #phoneNum, #company, #reason, #referral, #message {
+    padding-left: 1dvw;
 }
 
 .consent-button {
+    width: 45.2dvw;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4dvw;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 1dvw;
     font-size: 1.5dvh;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
 }
 
 .submit-reset {
@@ -103,7 +120,7 @@
     gap: 2dvw;
 }
 
-#submit, #reset {
+#submit {
     border: transparent;
     border-radius: 2dvh;
     padding: 0.75dvh 4dvw;
@@ -111,24 +128,50 @@
     color: #1B2A41;
 }
 
-#submit:hover, #reset:hover {
+#reset {
+    border: transparent;
+    border-radius: 2dvh;
+    padding: 0.75dvh 4dvw;
+    background-color: #F0D6D6;
+    color: #E63946;
+}
+
+#submit:hover {
     cursor: pointer;
-    color: #AC8205;
-    background-color: #f5f5f5;
+    color: #FFFFFF ;
+    background-color: #1B263B;
+}
+
+#reset:hover {
+    cursor: pointer;
+    color: #9E2A2B  ;
+    background-color: #EABBBB   ;
 }
 
 
-
+/*Optimization for small phones*/
 @media (max-width: 700px) {
     .contactForm {
         padding-top: 3dvh;
     }
 
-    .client-info-inputs {
-        width: 85dvw;
+    .altFormTitle {
+        display: block;
+        padding-bottom: 2dvh;
+        font-size: 0.75rem;
     }
 
-    #name, #reason, #referral, #message {
+    #formTitle {
+        display: none;
+    }
+
+    .client-info-inputs {
+        width: 85dvw;
+        height: 70dvh;
+        gap: 3dvh;
+    }
+
+    #name, #reason, #company, #referral, #message {
         width: 67.5dvw;
     }
 
@@ -136,8 +179,9 @@
         width: 32.5dvw;
     }
 
-    #name, #email, #phoneNum, #reason, #referral, #message {
+    #name, #email, #phoneNum, #company, #reason, #referral, #message {
         font-size: 0.7rem;
+        padding-left: 1.5dvw;
     }
 
     .consent-button {
@@ -147,5 +191,12 @@
 
     #submit, #reset {
         width: 25dvw;
+    }
+}
+
+/*Optimization for iPads*/
+@media (min-width: 700px) and (max-width: 1366px) {
+    .emailPhoneNum {
+        width: 100%;
     }
 }

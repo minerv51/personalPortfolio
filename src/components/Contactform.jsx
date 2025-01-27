@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import '../styles/Contactform.css';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phoneNum: '',
-        contactMethod: 'Email',
+        company: '',
         reason: 'placeholder',
         referral: 'referralPlace',
         message: '',
@@ -23,16 +24,52 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Replace with logic to send submissions to email
-        console.log(formData);
-    };
+
+            // Replace these with your actual IDs from EmailJS
+            const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+            const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+            //console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
+            //console.log(import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+            //console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+
+            emailjs
+                .send(
+                    serviceID, // Service ID
+                    templateID, // Template ID
+                    formData,   // Form data to send
+                    publicKey   // Public Key
+                )
+                .then(
+                    (result) => {
+                        console.log('Email successfully sent:', result.text);
+                        alert('Your message has been sent!');
+                        setFormData({
+                            name: '',
+                            email: '',
+                            phoneNum: '',
+                            company: '',
+                            contactMethod: 'Email',
+                            reason: 'placeholder',
+                            referral: 'referralPlace',
+                            message: '',
+                            consent: false,
+                        });
+                    },
+                    (error) => {
+                        console.error('Failed to send email:', error.text);
+                        alert('Failed to send your message. Please try again.');
+                    }
+                );
+        };
 
     const handleReset = () => {
         setFormData({
             name: '',
             email: '',
             phoneNum: '',
-            contactMethod: 'Email',
+            company: '',
             reason: 'placeholder',
             referral: 'referralPlace',
             message: '',
@@ -42,6 +79,9 @@ const ContactForm = () => {
 
     return (
         <div className="contactForm">
+            <div className="altFormTitle">
+                <h1>Get In Touch</h1>
+            </div>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="client-info-inputs">
 
@@ -55,6 +95,10 @@ const ContactForm = () => {
                         <input required id="email" type="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} />
                         
                         <input required id="phoneNum" type="number" name="phoneNum" placeholder='Phone Number' value={formData.phoneNum} onChange={handleChange} />
+                    </div>
+
+                    <div className='companyName'>
+                        <input id="company" type="text" name="company" placeholder='Company' value={formData.company} onChange={handleChange} />
                     </div>
 
                     <div className='reason'>

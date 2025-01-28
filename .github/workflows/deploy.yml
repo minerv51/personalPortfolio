@@ -29,6 +29,10 @@ jobs:
       - name: Build Vite app
         run: npm run build
 
+      # ✅ NEW STEP: Add CNAME file before deploying
+      - name: Add CNAME file
+        run: echo "bminervino.ca" > dist/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

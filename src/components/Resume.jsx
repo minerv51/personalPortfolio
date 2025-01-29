@@ -15,7 +15,7 @@ function ResumeSection () {
                 />
             </div>
             <div className='resumeDownload'>
-                <a href='/personalPortfolio/resume.pdf' download='baminervino_resume.pdf'>
+                <a href='/resume.pdf' download='baminervino_resume.pdf'>
                     <button id='downloadButton'>
                         Download Resume
                     </button>

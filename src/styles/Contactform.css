@@ -6,7 +6,7 @@
     align-items: center;
     padding-top: 5dvh;
     color: #1B2A41;
-    height: 120dvh;
+    height: 85dvh;
 }
 
 .form {
@@ -29,8 +29,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5dvh;
-    width: 50dvw;
+    gap: 3.25dvh;
+    height: 75dvh;
+    width: 40dvw;
     border: transparent;
     padding: 4dvh;
     border-radius: 5dvh;
@@ -99,10 +100,12 @@
 
 #name, #email, #phoneNum, #company, #reason, #referral, #message {
     padding-left: 1dvw;
+    font-size: 0.7rem;
+    width: 35dvw;
 }
 
 .consent-button {
-    width: 45.2dvw;
+    width: 32.5dvw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
@@ -150,7 +153,7 @@ input[type="checkbox"] {
 
 
 /*Optimization for small phones*/
-@media (max-width: 700px) {
+@media (max-width: 835px) {
     .contactForm {
         padding-top: 3dvh;
     }
@@ -195,7 +198,7 @@ input[type="checkbox"] {
 }
 
 /*Optimization for iPads*/
-@media (min-width: 700px) and (max-width: 1366px) {
+@media (min-width: 835px) and (max-width: 1366px) {
     .emailPhoneNum {
         width: 100%;
     }

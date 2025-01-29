@@ -123,7 +123,7 @@ const ContactForm = () => {
                             id="message"
                             name="message"
                             rows="4"
-                            placeholder="Have A Question? Get In Touch!"
+                            placeholder="Have A Question or Comment? Get In Touch!"
                             value={formData.message}
                             onChange={handleChange}
                         ></textarea>

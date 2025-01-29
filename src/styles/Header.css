@@ -65,7 +65,7 @@
 
 
 /* Styling for small phones */
-@media (max-width: 700px) {
+@media (max-width: 935px) {
     .nav-name {
         display: none;
     }

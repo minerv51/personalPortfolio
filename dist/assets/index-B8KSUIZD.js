@@ -7977,7 +7977,7 @@ function Footer() {
     ] })
   ] });
 }
-const portrait = "/personalPortfolio/assets/IMG_2663_transparent-BEzBXXrQ.png";
+const portrait = "" + new URL("IMG_2663_transparent-BEzBXXrQ.png", import.meta.url).href;
 function HeroBanner() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "heroBanner", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bannerText", role: "contentinfo", children: [
@@ -7995,7 +7995,7 @@ function HeroBanner() {
 function Home() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(HeroBanner, {}) });
 }
-const aboutImage = "/personalPortfolio/assets/IMG_0919-DxwEVz3q.png";
+const aboutImage = "" + new URL("IMG_0919-DxwEVz3q.png", import.meta.url).href;
 function Intro() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "introSection", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "introSectTitle", children: "About Me" }),

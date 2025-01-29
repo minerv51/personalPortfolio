@@ -1,6 +1,5 @@
 import { useState } from "react";
 import '../styles/Portfolio.css'
-import corfinioLogo from '../assets/Corfinio-Logo.png'
 import portrait from '../assets/IMG_2663_transparent.png'
 
 function Portfolio () {

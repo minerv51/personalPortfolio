@@ -13,7 +13,7 @@
 
 .tabButton {
     padding: 1dvh 1dvw;
-    border-radius: 1dvh;
+    border-radius: 1.5dvh;
     width: 20%;
     background-color: transparent;
     border: 2px solid #1B2A41;
@@ -70,7 +70,7 @@
     color: #1B2A41;
     padding: 1dvh;
     border: 2px solid #1B2A41;
-    border-radius: 1dvh;
+    border-radius: 1.5dvh;
     width: 15dvw;
 }
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import '../styles/Portfolio.css'
 import portrait from '../assets/IMG_2663_transparent.png'
+import { Link } from 'react-router-dom';
 
 function Portfolio () {
     const [activeTab, setActiveTab] = useState("coding");
@@ -64,17 +65,19 @@ function Portfolio () {
                             <div className="siteCard">
                                 <h3>Personal Portfolio Website</h3>
                                 <img
-                                src={portrait}
-                                id="portfolioLogo"
-                                alt="A portrait of a man with slicked back dark hair, a trimmed beard, wearing a light blue-green shirt with a transparent bacground."
+                                    src={portrait}
+                                    id="portfolioLogo"
+                                    alt="A portrait of a man with slicked back dark hair, a trimmed beard, wearing a light blue-green shirt with a transparent bacground."
                                 ></img>
-                                <a 
+
+                                <Link 
+                                    to="/portfolioSiteInfo" 
+                                    role='button' 
                                     className="visitSiteButton"
-                                    target="_blank"
-                                    onClick={changeText}
                                 >
-                                    {linkText}
-                                </a>
+                                    Learn More
+                                </Link>
+
                             </div>
                         </div>
                     </div>
@@ -90,6 +93,7 @@ function Portfolio () {
                                         src={photo.src}
                                         alt={photo.alt}
                                         className="thumbnail"
+                                        loading="lazy"
                                     />
                                 ))}
                             </div>
@@ -104,6 +108,7 @@ function Portfolio () {
                                         src={photo.src}
                                         alt={photo.alt}
                                         className="thumbnail"
+                                        loading="lazy"
                                     />
                                 ))}
                             </div>

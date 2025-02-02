@@ -28,7 +28,7 @@ function Intro() {
                     <br/>
                 </div>
                 <div className='aboutImage'>
-                    <img id='groupImage' src={aboutImage} alt="A circularly framed photo of a group of four friends smiling, they are dressed in formal attire at an indoor event with festive background decorations."/>
+                    <img id='groupImage' src={aboutImage} alt="A young couple posing for a selfie outdoors in an urban setting. The man, wearing sunglasses and a white sweatshirt with red text, has short dark hair and a trimmed beard. The woman, wearing glasses and a light green sweater, has long brown hair and is smiling gently. The background features a modern building with glass windows and metal panels." loading='lazy'/>
                 </div>
                 <div className='contactInfo'>
                     <h3 id='segmentTitle'>Contact Information</h3>

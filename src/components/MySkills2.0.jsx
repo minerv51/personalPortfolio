@@ -1,6 +1,7 @@
 import '../styles/MySkills2.0.css'
 import { FaLaptopCode, FaRocket, FaChartBar, FaDatabase, FaShieldAlt, FaUserTie, FaLightbulb, FaHandshake, FaRegClock, FaPuzzlePiece, FaReact, FaPython, FaHtml5, FaCss3, FaComments, FaRecycle, FaChalkboardTeacher } from 'react-icons/fa';
-import { SiMicrosoftexcel, SiMicrosoftpowerpoint, SiTableau } from 'react-icons/si';
+import { SiTableau } from 'react-icons/si';
+import { PiMicrosoftExcelLogoFill , PiMicrosoftPowerpointLogoFill  } from "react-icons/pi";
 
 function MySkills2 () {
 
@@ -43,11 +44,11 @@ function MySkills2 () {
                     <h3 className='iconText'>Data Analysis</h3>
                 </div>
                 <div className='skillContainer'>
-                    <SiMicrosoftexcel size={150} color='#1B2A41' title='Microsoft Excel' className='icon' />
+                    <PiMicrosoftExcelLogoFill  size={150} color='#1B2A41' title='Microsoft Excel' className='icon' />
                     <h3 className='iconText'>Microsoft Excel</h3>
                 </div>
                 <div className='skillContainer'>
-                    <SiMicrosoftpowerpoint size={150} color='#1B2A41' title='Microsoft PowerPoint' className='icon' />
+                    <PiMicrosoftPowerpointLogoFill   size={150} color='#1B2A41' title='Microsoft PowerPoint' className='icon' />
                     <h3 className='iconText'>Microsoft PowerPoint</h3> 
                 </div>
             </div>

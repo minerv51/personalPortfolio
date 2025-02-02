@@ -9,4 +9,8 @@ export default defineConfig({
   build: {
     minify: false, //Prevent minification for debugging
   },
+
+  server: {
+    allowedHosts: ['d546-99-247-216-134.ngrok-free.app'],
+  },
 })

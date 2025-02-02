@@ -1,0 +1,17 @@
+.devProcess {
+    color: #1B2A41;
+    background-color: #E5E9F0;
+}
+
+#title {
+    text-align: center;
+    padding-top: 10dvh;
+    padding-bottom: 5dvh;
+}
+
+/*Styling for phones*/
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5rem;
+    }
+}

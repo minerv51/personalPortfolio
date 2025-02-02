@@ -26,7 +26,7 @@
     text-decoration: none;
     color: #1B2A41;
     border: 2px solid #1B2A41;
-    border-radius: 3dvh;
+    border-radius: 2dvh;
     padding: 1dvh 3dvh;
 }
 
@@ -60,5 +60,12 @@
         width: 100%;
         text-align: center;
         margin-left: 0;
+    }
+}
+
+/*Styling for iPads*/
+@media (min-width: 700px) and (max-width: 1366px) {
+    .bannerText {
+        text-align: center;
     }
 }

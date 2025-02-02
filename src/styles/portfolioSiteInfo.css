@@ -1,0 +1,147 @@
+.portfolioSiteInfo {
+    color: #1B2A41;
+    background-color: #E5E9F0;
+}
+
+#titleBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2dvh 0dvw;
+    gap: 2dvh;
+}
+
+#githubLink {
+    text-decoration: none;
+}
+
+.btnGithub {
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    border: none;
+  
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 100px;
+    font-weight: 800;
+    place-content: center;
+  
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+    line-height: 1rem;
+  
+    background-color: #E5E9F0;
+    border: 1px solid #1B2A41;
+    color: #1B2A41;
+  }
+  
+  .btnGithub:hover {
+    border: 1px solid #1B2A41;
+    color: #E5E9F0;
+    transform: translate(0, -0.25rem);
+    background-color: #1B2A41;
+  }
+  
+  #githubBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3dvh;
+    padding-bottom: 10dvh;
+  }
+
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5dvh 0dvw;
+  }
+
+  .techStack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4dvw;
+    padding-top: 5dvh;
+    text-align: center;
+  }
+
+  .techStackList {
+    padding-top: 3dvh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+  }
+
+  .stackItem {
+    text-align: center;
+  }
+
+  .emailJSLogo {
+    height: 200px;
+    width: auto;
+    padding: 25px;
+  }
+
+
+  /*Styling for the box transitions*/
+  .techContainer {
+    position: relative;
+    display: inline-block;
+    border: 5px solid #1B2A41;
+    border-radius: 2dvh;
+  }
+
+  .stackItem {
+    opacity: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .techText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    transition: opacity 0.3s ease-in-out;
+    width: 90%;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  /*Styling for when the text box is hovered over*/
+  .techContainer:hover {
+    cursor: pointer;
+  }
+
+  .techContainer:hover .techText {
+    opacity: 100%;
+  }
+
+  .techContainer:hover .stackItem {
+    opacity: 10%;
+  }
+
+
+/*Media query for phones*/
+@media (max-width: 768px) {
+  #titleBlock {
+    text-align: center;
+  }
+
+  #pageTitle {
+    font-size: 1.5rem;
+  }
+
+  #pageSubtitle {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .techStack{
+    flex-direction: column;
+    gap: 10dvh;
+  }
+}

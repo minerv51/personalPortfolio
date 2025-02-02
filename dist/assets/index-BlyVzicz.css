@@ -14,6 +14,7 @@
     align-items: center;
     background-color: #E5E9F0;
     height: 15dvh;
+    z-index: 1000;
 }
 
 .nav-name {
@@ -65,7 +66,7 @@
 
 
 /* Styling for small phones */
-@media (max-width: 700px) {
+@media (max-width: 935px) {
     .nav-name {
         display: none;
     }
@@ -165,7 +166,7 @@
     text-decoration: none;
     color: #1B2A41;
     border: 2px solid #1B2A41;
-    border-radius: 3dvh;
+    border-radius: 2dvh;
     padding: 1dvh 3dvh;
 }
 
@@ -199,6 +200,13 @@
         width: 100%;
         text-align: center;
         margin-left: 0;
+    }
+}
+
+/*Styling for iPads*/
+@media (min-width: 700px) and (max-width: 1366px) {
+    .bannerText {
+        text-align: center;
     }
 }* {
     font-family: 'Poppins', sans-serif;
@@ -613,11 +621,11 @@
 #downloadButton {
     padding: 1dvh 2dvh;
     border-radius: 2dvh;
-    border: transparent;
-    background-color: #637da5;
-    color: #E5E9F0;
+    background-color: #E5E9F0;
+    color: #1B2A41;
     font-weight: 550;
     font-size: 2.5dvh;
+    border: 2px solid #1B2A41;
 }
 
 #downloadButton:hover {
@@ -652,7 +660,7 @@
 
 .tabButton {
     padding: 1dvh 1dvw;
-    border-radius: 1dvh;
+    border-radius: 1.5dvh;
     width: 20%;
     background-color: transparent;
     border: 2px solid #1B2A41;
@@ -709,7 +717,7 @@
     color: #1B2A41;
     padding: 1dvh;
     border: 2px solid #1B2A41;
-    border-radius: 1dvh;
+    border-radius: 1.5dvh;
     width: 15dvw;
 }
 
@@ -782,7 +790,7 @@
     align-items: center;
     padding-top: 5dvh;
     color: #1B2A41;
-    height: 120dvh;
+    height: 85dvh;
 }
 
 .form {
@@ -805,8 +813,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5dvh;
-    width: 50dvw;
+    gap: 3.25dvh;
+    height: 75dvh;
+    width: 40dvw;
     border: transparent;
     padding: 4dvh;
     border-radius: 5dvh;
@@ -875,10 +884,12 @@
 
 #name, #email, #phoneNum, #company, #reason, #referral, #message {
     padding-left: 1dvw;
+    font-size: 0.7rem;
+    width: 35dvw;
 }
 
 .consent-button {
-    width: 45.2dvw;
+    width: 32.5dvw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
@@ -924,9 +935,81 @@ input[type="checkbox"] {
     background-color: #EABBBB   ;
 }
 
+/* From Uiverse.io by WhiteNervosa */ 
+/* Variation of work by @mrhyddenn for Radios */
+
+
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: var(--accent-color, #1B2A41);
+  }
+  
+  #cbx2:checked + .check svg {
+    stroke: var(--accent-color, #1B2A41);
+  }
+  
+  #cbx2:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx2:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+
 
 /*Optimization for small phones*/
-@media (max-width: 700px) {
+@media (max-width: 835px) {
     .contactForm {
         padding-top: 3dvh;
     }
@@ -971,8 +1054,170 @@ input[type="checkbox"] {
 }
 
 /*Optimization for iPads*/
-@media (min-width: 700px) and (max-width: 1366px) {
+@media (min-width: 835px) and (max-width: 1366px) {
     .emailPhoneNum {
         width: 100%;
+    }
+}.portfolioSiteInfo {
+    color: #1B2A41;
+    background-color: #E5E9F0;
+}
+
+#titleBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2dvh 0dvw;
+    gap: 2dvh;
+}
+
+#githubLink {
+    text-decoration: none;
+}
+
+.btnGithub {
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    border: none;
+  
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 100px;
+    font-weight: 800;
+    place-content: center;
+  
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+    line-height: 1rem;
+  
+    background-color: #E5E9F0;
+    border: 1px solid #1B2A41;
+    color: #1B2A41;
+  }
+  
+  .btnGithub:hover {
+    border: 1px solid #1B2A41;
+    color: #E5E9F0;
+    transform: translate(0, -0.25rem);
+    background-color: #1B2A41;
+  }
+  
+  #githubBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3dvh;
+    padding-bottom: 10dvh;
+  }
+
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5dvh 0dvw;
+  }
+
+  .techStack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4dvw;
+    padding-top: 5dvh;
+    text-align: center;
+  }
+
+  .techStackList {
+    padding-top: 3dvh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+  }
+
+  .stackItem {
+    text-align: center;
+  }
+
+  .emailJSLogo {
+    height: 200px;
+    width: auto;
+    padding: 25px;
+  }
+
+
+  /*Styling for the box transitions*/
+  .techContainer {
+    position: relative;
+    display: inline-block;
+    border: 5px solid #1B2A41;
+    border-radius: 2dvh;
+  }
+
+  .stackItem {
+    opacity: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .techText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    transition: opacity 0.3s ease-in-out;
+    width: 90%;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  /*Styling for when the text box is hovered over*/
+  .techContainer:hover {
+    cursor: pointer;
+  }
+
+  .techContainer:hover .techText {
+    opacity: 100%;
+  }
+
+  .techContainer:hover .stackItem {
+    opacity: 10%;
+  }
+
+
+/*Media query for phones*/
+@media (max-width: 768px) {
+  #titleBlock {
+    text-align: center;
+  }
+
+  #pageTitle {
+    font-size: 1.5rem;
+  }
+
+  #pageSubtitle {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .techStack{
+    flex-direction: column;
+    gap: 10dvh;
+  }
+}.devProcess {
+    color: #1B2A41;
+    background-color: #E5E9F0;
+}
+
+#title {
+    text-align: center;
+    padding-top: 10dvh;
+    padding-bottom: 5dvh;
+}
+
+/*Styling for phones*/
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5rem;
     }
 }

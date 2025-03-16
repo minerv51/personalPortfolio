@@ -16,13 +16,7 @@ function Intro() {
                     <br/>
                     <br/>
                     <p className='introText'>
-                        Hi! My name is Ben Anthony (B.A.) Minervino, I am a 21 year old Business Technology Management student currently attending
-                        Toronto Metropolitan University. I am aspiring to achieve a Bachelor of Commerce degree from the Ted Rogers School of Management.
-                        When I am not at school, I am either finding new adventures to go in with my friends and girlfriend or I am participating in one of my hobbies;
-                        photography, fitness, coding, video games, and watching or playing hockey. I am aspiring to develop a career
-                        in both business and technology as I have an entrepreneurial and analytical mindset, which complement my passion for technology. I have significant
-                        interests in artificial intelligence, software development, game development and finance. My passions, ambition, and hardworking mindset pushes me to succeed in my endeavors and have
-                        an upperhand on the competition.
+                    Hi! I'm Ben Anthony (B.A.) Minervino, a 21-year-old Business Technology Management student at Toronto Metropolitan University. Outside of school, I enjoy hanging out with friends and my girlfriend, as well as photography, fitness, coding, gaming, and hockey. With an entrepreneurial and analytical mindset, I aim to build a career at the intersection of business and technology. I'm passionate about AI, software and game development, and finance, always driven by ambition, hard work, and a competitive edge.
                     </p>
                     <br/>
                     <br/>

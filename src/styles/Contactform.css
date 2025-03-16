@@ -42,10 +42,6 @@
     width: 45.2dvw;
 }
 
-#email, #phoneNum {
-    width: 30dvw;
-}
-
 #name, #email, #phoneNum {
     border: transparent;
     border-radius: 2dvh;
@@ -63,7 +59,7 @@
     justify-content: center;
     align-items: center;
     gap: 3dvw;
-    width: 98%;
+    width: 96%;
 }
 
 #company {

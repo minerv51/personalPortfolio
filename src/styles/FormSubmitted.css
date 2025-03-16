@@ -1,0 +1,43 @@
+.formSubmitted {
+    background-color: #E5E9F0;
+    color: #1B2A41;
+    height: 85dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    gap: 10dvh;
+}
+
+.successfulSubmitText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5dvh;
+}
+
+.backToHomeButton a{
+    text-decoration: none;
+    color: #1B2A41;
+    border: 2px solid #1B2A41;
+    border-radius: 2dvh;
+    padding: 1dvh 3dvh;
+}
+
+.backToHomeButton a:hover{
+    border: 2px solid #1B263B;
+    background-color: #1B263B;
+    color: white; 
+}
+
+
+/*Media queries for phones*/
+@media(max-width: 935px) {
+    .formSubmitted {
+        padding-top: 25%;
+    }
+
+    .successfulSubmitText {
+        padding: 0dvh 3dvw;
+    }
+}

@@ -5,8 +5,9 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 5dvh;
+    padding-bottom: 5dvh;
     color: #1B2A41;
-    height: 85dvh;
+    min-height: 85dvh;
 }
 
 .form {
@@ -14,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 85dvh;
 }
 
 .altFormTitle {
@@ -30,7 +32,7 @@
     align-items: center;
     justify-content: center;
     gap: 3.25dvh;
-    height: 75dvh;
+    min-height: 75dvh;
     width: 40dvw;
     border: transparent;
     padding: 4dvh;
@@ -49,7 +51,13 @@
     color: #1B2A41;
 }
 
-#name::placeholder, #email::placeholder, #phoneNum::placeholder, #company::placeholder, #message::placeholder {
+#name::placeholder, 
+#email::placeholder, 
+#phoneNum::placeholder, 
+#company::placeholder, 
+#message::placeholder, 
+#reasonOther::placeholder,
+#referralOther::placeholder {
     color: #1B2A41;
 }
 
@@ -78,8 +86,24 @@
     color: #1B2A41;
 }
 
+#reasonOther {
+    width: 35.2dvw;
+    border: transparent;
+    border-radius: 2dvh;
+    height: 4dvh;
+    color: #1B2A41;
+}
+
 #referral {
     width: 45.2dvw;
+    border: transparent;
+    border-radius: 2dvh;
+    height: 4dvh;
+    color: #1B2A41;
+}
+
+#referralOther {
+    width: 35.2dvw;
     border: transparent;
     border-radius: 2dvh;
     height: 4dvh;
@@ -94,7 +118,7 @@
     padding: 1dvh 0dvw;
 }
 
-#name, #email, #phoneNum, #company, #reason, #referral, #message {
+#name, #email, #phoneNum, #company, #reason, #reasonOther, #referral, #referralOther, #message {
     padding-left: 1dvw;
     font-size: 0.7rem;
     width: 35dvw;
@@ -107,6 +131,11 @@
     justify-content: left;
     gap: 1dvw;
     font-size: 1.5dvh;
+}
+
+#reason:hover,
+#referral:hover {
+    cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -148,7 +177,6 @@ input[type="checkbox"] {
 }
 
 /* From Uiverse.io by WhiteNervosa */ 
-/* Variation of work by @mrhyddenn for Radios */
 
 
 .check {
@@ -238,11 +266,11 @@ input[type="checkbox"] {
 
     .client-info-inputs {
         width: 85dvw;
-        height: 70dvh;
+        min-height: 70dvh;
         gap: 3dvh;
     }
 
-    #name, #reason, #company, #referral, #message {
+    #name, #reason, #company, #referral, #message, #reasonOther, #referralOther {
         width: 67.5dvw;
     }
 

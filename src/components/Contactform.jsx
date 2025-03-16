@@ -2,15 +2,20 @@ import { useState } from 'react';
 import '../styles/Contactform.css';
 import emailjs from 'emailjs-com';
 import { emailConfig } from '../../config';
+import { useNavigate} from 'react-router-dom';
 
 const ContactForm = () => {
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phoneNum: '',
         company: '',
         reason: 'placeholder',
+        reasonOther: '',
         referral: 'referralPlace',
+        referralOther: '',
         message: '',
         consent: false
     });
@@ -27,8 +32,6 @@ const ContactForm = () => {
         e.preventDefault();
         //console.log(emailConfig.serviceID); // Debugging
 
-
-
             emailjs
                 .send(
                     emailConfig.serviceID, // Service ID
@@ -39,7 +42,7 @@ const ContactForm = () => {
                 .then(
                     (result) => {
                         console.log('Email successfully sent:', result.text);
-                        alert('Your message has been sent!');
+                        navigate('/formSubmitted');
                         setFormData({
                             name: '',
                             email: '',
@@ -47,7 +50,9 @@ const ContactForm = () => {
                             company: '',
                             contactMethod: 'Email',
                             reason: 'placeholder',
+                            reasonOther: '',
                             referral: 'referralPlace',
+                            referralOther: '',
                             message: '',
                             consent: false,
                         });
@@ -66,7 +71,9 @@ const ContactForm = () => {
             phoneNum: '',
             company: '',
             reason: 'placeholder',
+            reasonOther: '',
             referral: 'referralPlace',
+            referralOther: '',
             message: '',
             consent: false
         });
@@ -98,7 +105,7 @@ const ContactForm = () => {
 
                     <div className='reason'>
                         <select required id="reason" name="reason" placeholder='Reason for Contact' value={formData.reason} onChange={handleChange}>
-                            <option value="placeholder">Reason for Contact</option>
+                            <option value="">Reason for Contact</option>
                             <option value="inquiry">General Inquiry</option>
                             <option value="job">Job Opportunity</option>
                             <option value="feedback">Feedback</option>
@@ -106,9 +113,16 @@ const ContactForm = () => {
                         </select>
                     </div>
 
+                    { formData.reason === 'other' && (
+                        <div className='reasonOther'>
+                            <input required id="reasonOther" type='text' name='reasonOther' placeholder='Please Specify Reason' value={formData.reasonOther} onChange={handleChange} />
+                        </div>
+                    )}
+
+
                     <div className='referral'>
                         <select required id="referral" name="referral" value={formData.referral} onChange={handleChange}>
-                            <option value="referralPlace">How Did You Hear About Me?</option>
+                            <option value="">How Did You Hear About Me?</option>
                             <option value="linkedin">LinkedIn</option>
                             <option value="instagram">Instagram</option>
                             <option value="friend/colleague">Friend/Colleague</option>
@@ -116,6 +130,12 @@ const ContactForm = () => {
                             <option value="other">Other</option>
                         </select>
                     </div>
+
+                    { formData.referral === 'other' && (
+                        <div className='referralOther'>
+                            <input required id="referralOther" type='text' name='referralOther' placeholder='Please Specify Referral' value={formData.referralOther} onChange={handleChange} />
+                        </div>
+                    )}
 
                     <div className='message'>
                         <textarea

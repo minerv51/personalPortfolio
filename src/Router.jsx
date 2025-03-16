@@ -8,6 +8,7 @@ import Resume from './pages/resume';
 import Project from './pages/projects';
 import Contact from './pages/contact';
 import PortfolioSiteInfo from './pages/portfolioSiteInfo';
+import FormSubmitted from './pages/FormSubmitted';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolioSiteInfo" element={<PortfolioSiteInfo />} />
+        <Route path='/formSubmitted' element={<FormSubmitted />} />
       </Routes>
       <Footer />
     </>

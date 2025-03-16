@@ -44,6 +44,7 @@
     .resumeTitle {
         font-size: 0.75rem;
         padding: 2dvh;
+        padding-top: 5dvh;
     }
 
     .iframe {

@@ -64,6 +64,12 @@
     height: 40dvh;
 }
 
+#clockworkLogo {
+    padding: 3dvh 0dvw;
+    height: 35dvh;
+    margin: 2.5dvh 0dvh;
+}
+
 .visitSiteButton {
     text-decoration: none;
     list-style: none;

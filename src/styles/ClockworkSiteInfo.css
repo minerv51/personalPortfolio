@@ -1,0 +1,96 @@
+.clockworkSiteInfo {
+    background-color: #E5E9F0;
+    color: #1B2A41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visitAppBlock {
+    margin: 15dvh 0dvw;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8dvh;
+    line-height: 2;
+}
+
+.visitAppInformationBlock {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2dvh;
+    padding-bottom: 2dvh;
+}
+
+.visitAppTitleBlock {
+    text-align: center;
+    padding-bottom: 2dvh;
+}
+
+.visitAppContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2dvh;
+    text-align: center;
+}
+
+.listTitle {
+    text-align: center !important;
+    font-weight: 600;
+}
+
+.knownIssuesBlock,
+.patchNotesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 1dvh;
+    padding-bottom: 2dvh;
+    width: 80%;
+}
+
+.clockworkInfoList {
+    list-style: none;
+}
+
+.visitAppButton {
+    text-decoration: none;
+    list-style: none;
+    color: #1B2A41;
+    padding: 1dvh;
+    border: 2px solid #1B2A41;
+    text-align: center;
+    width: 75%;
+    border-radius: 25px;
+}
+
+.visitAppButton:hover {
+    color: white;
+    background-color: #1B263B;
+    border-color: #1B263B;
+    cursor: pointer;
+}
+
+
+/*Optimization for Phones*/
+@media (max-width: 700px) {
+    .visitAppBlock {
+        width: 90%;
+    }
+
+    .visitAppButton {
+        width: 100%;
+    }
+
+    .knownIssuesBlock,
+    .patchNotesBlock {
+        width: 90%;
+    }
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import '../styles/Portfolio.css'
 import portrait from '../assets/IMG_2663_transparent.png'
+import clockwork from '../assets/clockwork.png'
 import { Link } from 'react-router-dom';
 
 function Portfolio () {
@@ -78,6 +79,22 @@ function Portfolio () {
                                     Learn More
                                 </Link>
 
+                            </div>
+                            <div className="siteCard">
+                                <h3>Clockwork Web App</h3>
+                                <img
+                                    src={clockwork}
+                                    id="clockworkLogo"
+                                    alt="A logo of a green clock, with the hour hand pointing to 12 and the minute hand pointing to 8"
+                                ></img>
+
+                                <Link
+                                    to="/clockworkSiteInfo"
+                                    role='button'
+                                    className="visitSiteButton"
+                                >
+                                    Learn More
+                                </Link>
                             </div>
                         </div>
                     </div>

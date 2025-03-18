@@ -141,7 +141,7 @@ const ClockworkSiteInfo = () => {
                     </div>
                 </div>
                     <Link
-                        to="https://minerv51.github.io/Digital-Clock/#/"
+                        to="https://minerv51.github.io/Clockwork"
                         role='button'
                         className="visitAppButton"
                         target='_blank'

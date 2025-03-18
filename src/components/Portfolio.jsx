@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../styles/Portfolio.css'
 import portrait from '../assets/IMG_2663_transparent.png'
-import clockwork from '../assets/clockwork.png'
+import clockwork from '../assets/Clockwork.png'
 import { Link } from 'react-router-dom';
 
 function Portfolio () {

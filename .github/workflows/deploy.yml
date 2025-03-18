@@ -34,10 +34,11 @@ jobs:
         run: echo "bminervino.ca" > dist/CNAME
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3  # Change to explicitly use v3
+        uses: actions/upload-artifact@v2
         with:
           name: vite-app
-          path: './dist'  # Upload the built Vite files from the dist folder
+          path: './dist'
+
 
 
   deploy:

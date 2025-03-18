@@ -1,0 +1,52 @@
+name: Deploy Vite App to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]  # Trigger workflow on main branch
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Updated version
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Updated version
+        with:
+          node-version: '18'  # Ensure Vite compatibility
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Vite app
+        run: npm run build
+
+      - name: Debugging - List project files
+        run: ls -R  # Check if dist exists
+
+      - name: Add CNAME file
+        run: echo "bminervino.ca" > dist/CNAME
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2  # Using v2 explicitly
+        with:
+          name: vite-build
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

@@ -35,7 +35,7 @@ jobs:
         run: echo "bminervino.ca" > dist/CNAME
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2  # Using v2 explicitly
+        uses: actions/upload-artifact # No specified version
         with:
           name: vite-build
           path: './dist'

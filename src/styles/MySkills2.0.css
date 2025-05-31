@@ -74,3 +74,24 @@
         padding: 6dvh;
     }
 }
+
+@media (min-width: 701px) and (max-width: 768px) {
+    .skillContainer {
+        flex: 1 1 25%;
+        max-width: 25%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skillContainer {
+        flex: 1 1 20%;
+        max-width: 20%;
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 175px;
+        height: auto;
+    }
+}

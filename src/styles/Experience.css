@@ -1,36 +1,109 @@
 .experience {
-    padding: 5dvh 0dvh;
-    height: auto;
-    text-align: center;
-    background-color: #E5E9F0;
-    color: #1B2A41;
+    background-color: #e5e9f0;
+    color: #1b2a41;
+    min-height: 100vh;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
 }
 
 .experienceContainer {
-    margin: auto;
-    margin-top: 3dvh;
-    text-align: left;
-    width: 50%;
-    color: #1B2A41;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 6px 32px rgba(27, 42, 65, 0.10), 0 1.5px 6px rgba(27, 42, 65, 0.04);
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
+.experienceItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
+.experienceItem h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0;
+    color: #1b2a41;
+}
 
-/*Styling for small phones*/
-@media (max-width: 700px) {
+.experienceItem h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0 0;
+    color: #324a6d;
+}
+
+.experienceItem h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.1rem 0 0 0;
+    color: #5c6f8c;
+    letter-spacing: 0.5px;
+}
+
+.experienceItem p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+    color: #26334d;
+    line-height: 1.6;
+}
+
+.experienceItem hr {
+    border: none;
+    border-top: 1.5px solid #e5e9f0;
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .experienceContainer {
+        max-width: 95vw;
+        padding: 2rem 1.2rem 1rem 1.2rem;
+    }
+    .experience h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
     .experience {
-        font-size: 0.75rem;
-        padding: 0;
+        padding: 2rem 0 1rem 0;
     }
-
     .experienceContainer {
-        width: 95%;
+        padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 12px rgba(27, 42, 65, 0.10);
+        gap: 1.5rem;
     }
-}
-
-/*Styling for iPads*/
-@media (min-width: 700px) and (max-width: 1366px) {
-    .experienceContainer {
-        width: 80%;
+    .experience h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+    .experienceItem h2 {
+        font-size: 1.05rem;
+    }
+    .experienceItem h3,
+    .experienceItem h4,
+    .experienceItem p {
+        font-size: 0.95rem;
+    }
+    .experienceItem hr {
+        margin: 1rem 0 0 0;
     }
 }

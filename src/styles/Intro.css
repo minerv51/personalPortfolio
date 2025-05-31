@@ -28,6 +28,7 @@
     align-items: flex-start;
     gap: 7dvh;
     padding-top: 5dvh;
+    
 }
 
 #groupImage {
@@ -40,52 +41,7 @@
     width: 30%;
 }
 
-#segmentTitle {
-    text-align: center;
-}
 
-.contactInfo {
-    width: 30%;
-    text-align: center;
-}
-
-.linksTable {
-    text-align: left;
-    border-spacing: 5dvh 3dvh;
-}
-
-.linksTable td {
-    color: #1B2A41;
-}
-
-.linksTable a {
-    text-decoration: underline;
-    color: #1B2A41;
-}
-
-.contactRow:hover {
-    color: #AC8205; /* Highlight the row */
-    cursor: pointer; /* Change cursor on hover */
-}
-
-.contactRow:hover #icon svg {
-    color: #AC8205; /* Change icon color on hover */
-}
-
-.contactRow:hover #content a {
-    color: #AC8205 !important; /* Change link text color on hover */
-}
-
-
-
-#icon {
-    font-size: 3dvh;
-    vertical-align: middle;
-}
-
-#content {
-    vertical-align: middle;
-}
 
 
 

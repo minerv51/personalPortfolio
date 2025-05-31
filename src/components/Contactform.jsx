@@ -150,7 +150,7 @@ const ContactForm = () => {
                     </div>
 
                     <div className="consent-button">
-                        <label htmlFor="consent">I agree to be contacted for a follow-up</label>
+                        <label className='consentText' htmlFor="consent">I agree to be contacted for a follow-up</label>
                         <div className="container">
                             <input required name="consent" checked={formData.consent} onChange={handleChange} type="checkbox" id="cbx2" style={{ display: 'none' }} />
                             <label htmlFor="cbx2" className="check">

@@ -1,0 +1,180 @@
+.intro2 {
+    min-height: 85vh;
+    background-color: #E5E9F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro2Title {
+    font-size: 2.5rem;
+    color: #1B2A41;
+}
+
+.intro2Body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.imageContainer {
+  /* Ensures the div only wraps its content (the image) */
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  width: auto !important; 
+  flex: none !important;   
+}
+
+
+.introImage {
+    width: auto;
+    height: 450px !important;
+    border: 5px solid #1B2A41;
+    border-radius: 50px;
+}
+
+#segmentTitle {
+    text-align: center;
+    color: #1B2A41;
+}
+
+.contactInfo {
+    width: 30%;
+    text-align: center;
+}
+
+.linksTable {
+    text-align: left;
+    border-spacing: 5dvh 3dvh;
+}
+
+.linksTable td {
+    color: #1B2A41;
+}
+
+.linksTable a {
+    text-decoration: underline;
+    color: #1B2A41;
+}
+
+.contactRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.contactRow:hover {
+    color: #AC8205; /* Highlight the row */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.contactRow:hover #icon svg {
+    color: #AC8205; /* Change icon color on hover */
+}
+
+.contactRow:hover #content a {
+    color: #AC8205 !important; /* Change link text color on hover */
+}
+
+#icon {
+    font-size: 3dvh;
+    vertical-align: middle;
+}
+
+#content {
+    vertical-align: middle;
+    transform: translateY(-4px);
+}
+
+.intro2Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0;
+}
+
+.introContent {
+    width: 85%;
+    border: 2px solid transparent;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #f7fafc;
+}
+.intro2ContactMobile {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    #intro2Title {
+        font-size: 2rem;
+    }
+    .intro2Body {
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+    }
+    .introImage {
+        height: 250px !important;
+    }
+    #segmentTitle {
+        font-size: 1.5rem;
+    }
+    .linksTable {
+        display: none;
+    }
+    .intro2ContactMobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+        padding: 20px 0;
+    }
+    .mobileIcons {
+        color: #1B2A41;
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+    #intro2Title {
+        font-size: 2.5rem;
+    }
+    .introImage {
+        width: 50% !important;
+        height: auto !important;
+    }
+    #segmentTitle {
+        font-size: 1.75rem;
+    }
+    .mobileIcons {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #intro2Title {
+        font-size: 2.75rem;
+    }
+    .introImage {
+        width: 45% !important;
+        height: auto !important;
+    }
+    #segmentTitle {
+        font-size: 2rem;
+    }
+    .mobileIcons {
+        font-size: 2.5rem;
+    }
+}

@@ -1,184 +1,162 @@
-.contactForm {
-    background-color: #E5E9F0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 5dvh;
-    padding-bottom: 5dvh;
-    color: #1B2A41;
-    min-height: 85dvh;
+/* Base Styles */
+:root {
+    --primary-bg: #f7f9fb;
+    --primary-color: #1B2A41;
+    --accent: #1B263B;
+    --input-bg: #fff;
+    --input-border: #dbe2ef;
+    --input-radius: 1.2rem;
+    --shadow: 0 4px 24px rgba(27, 42, 65, 0.08);
+    --danger: #e63946;
+    --danger-bg: #fbeaec;
+    --accent-hover: #274060;
+    --transition: 0.2s cubic-bezier(.4,0,.2,1);
 }
 
-.form {
+body {
+    background: #e5e9f0;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.contactForm {
+    background: #e5e9f0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: 85dvh;
+    padding: 4rem 0;
+    box-sizing: border-box;
+}
+
+#formTitle, .altFormTitle {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .altFormTitle {
     display: none;
 }
 
-#formTitle {
-    padding: 0dvh;
+.form {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .client-info-inputs {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3.25dvh;
-    min-height: 75dvh;
-    width: 40dvw;
-    border: transparent;
-    padding: 4dvh;
-    border-radius: 5dvh;
-    box-shadow: 2dvh 2dvh 2dvh 2dvh rgba(0, 0, 0, 0.3);
-}
-
-#name {
-    width: 45.2dvw;
-}
-
-#name, #email, #phoneNum {
-    border: transparent;
-    border-radius: 2dvh;
-    line-height: 4dvh;
-    color: #1B2A41;
-}
-
-#name::placeholder, 
-#email::placeholder, 
-#phoneNum::placeholder, 
-#company::placeholder, 
-#message::placeholder, 
-#reasonOther::placeholder,
-#referralOther::placeholder {
-    color: #1B2A41;
+    gap: 1.5rem;
 }
 
 .emailPhoneNum {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3dvw;
-    width: 96%;
+    gap: 1rem;
 }
 
-#company {
-    width: 45.2dvw;
-    border: transparent;
-    border-radius: 2dvh;
-    height: 4dvh;
-    color: #1B2A41;
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid var(--input-border);
+    border-radius: var(--input-radius);
+    background: var(--input-bg);
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+    outline: none;
+    box-sizing: border-box;
 }
 
-#reason {
-    width: 45.2dvw;
-    border: transparent;
-    border-radius: 2dvh;
-    height: 4dvh;
-    color: #1B2A41;
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px #e5e9f0;
 }
 
-#reasonOther {
-    width: 35.2dvw;
-    border: transparent;
-    border-radius: 2dvh;
-    height: 4dvh;
-    color: #1B2A41;
-}
-
-#referral {
-    width: 45.2dvw;
-    border: transparent;
-    border-radius: 2dvh;
-    height: 4dvh;
-    color: #1B2A41;
-}
-
-#referralOther {
-    width: 35.2dvw;
-    border: transparent;
-    border-radius: 2dvh;
-    height: 4dvh;
-    color: #1B2A41;
+::placeholder {
+    color: #8a99b3;
+    opacity: 1;
 }
 
 #message {
-    width: 45.2dvw;
-    border: transparent;
-    border-radius: 2dvh;
-    height: 12dvh;
-    padding: 1dvh 0dvw;
-}
-
-#name, #email, #phoneNum, #company, #reason, #reasonOther, #referral, #referralOther, #message {
-    padding-left: 1dvw;
-    font-size: 0.7rem;
-    width: 35dvw;
+    min-height: 120px;
+    resize: vertical;
 }
 
 .consent-button {
-    width: 32.5dvw;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
-    gap: 1dvw;
-    font-size: 1.5dvh;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: #4b587c;
 }
 
-#reason:hover,
-#referral:hover {
-    cursor: pointer;
+.container{
+    transform: translateY(4px);
 }
 
 input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 1.1rem;
+    height: 1.1rem;
     cursor: pointer;
 }
 
 .submit-reset {
     display: flex;
-    flex-direction: row;
-    gap: 2dvw;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+#submit, #reset {
+    border: none;
+    border-radius: var(--input-radius);
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
 }
 
 #submit {
-    border: transparent;
-    border-radius: 2dvh;
-    padding: 0.75dvh 4dvw;
-    background-color: white;
-    color: #1B2A41;
-}
-
-#reset {
-    border: transparent;
-    border-radius: 2dvh;
-    padding: 0.75dvh 4dvw;
-    background-color: #F0D6D6;
-    color: #E63946;
+    background: var(--accent);
+    color: #fff;
 }
 
 #submit:hover {
-    cursor: pointer;
-    color: #FFFFFF ;
-    background-color: #1B263B;
+    background: var(--accent-hover);
+}
+
+#reset {
+    background: var(--danger-bg);
+    color: var(--danger);
 }
 
 #reset:hover {
-    cursor: pointer;
-    color: #9E2A2B  ;
-    background-color: #EABBBB   ;
+    background: #f8d7da;
+    color: #a71d2a;
+}
+
+/* Hide altFormTitle by default */
+.altFormTitle {
+    display: none;
 }
 
 /* From Uiverse.io by WhiteNervosa */ 
-
-
 .check {
     cursor: pointer;
     position: relative;
@@ -247,56 +225,127 @@ input[type="checkbox"] {
     transition-delay: 0.15s;
   }
 
+/* Media Queries */
 
-/*Optimization for small phones*/
-@media (max-width: 835px) {
+/* 1440px and up: Large screens */
+@media (min-width: 1440px) {
+    .form {
+        max-width: 700px;
+        padding: 3rem 3rem;
+    }
+    #formTitle, .altFormTitle {
+        font-size: 2.5rem;
+    }
+}
+
+/* 1024px - 1439px: Desktop/Laptop */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .form {
+        max-width: 600px;
+        padding: 2.5rem 2rem;
+    }
+}
+
+/* 768px - 1023px: Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .form {
+        max-width: 90vw;
+        padding: 2rem 1.5rem;
+    }
+    .emailPhoneNum {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* 430px - 767px: Large Phones/Small Tablets */
+@media (max-width: 767px) and (min-width: 430px) {
     .contactForm {
-        padding-top: 3dvh;
+        padding: 2rem 0;
     }
-
-    .altFormTitle {
-        display: block;
-        padding-bottom: 2dvh;
-        font-size: 0.75rem;
+    .form {
+        max-width: 98vw;
+        padding: 1.5rem 0.5rem;
     }
-
     #formTitle {
         display: none;
     }
-
-    .client-info-inputs {
-        width: 85dvw;
-        min-height: 70dvh;
-        gap: 3dvh;
+    .altFormTitle {
+        display: block;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
     }
-
-    #name, #reason, #company, #referral, #message, #reasonOther, #referralOther {
-        width: 67.5dvw;
-    }
-
-    #email, #phoneNum {
-        width: 32.5dvw;
-    }
-
-    #name, #email, #phoneNum, #company, #reason, #referral, #message {
-        font-size: 0.7rem;
-        padding-left: 1.5dvw;
-    }
-
-    .consent-button {
-        font-size: 0.5rem;
-        width: 85%;
-        gap: 2dvw;
-    }
-
-    #submit, #reset {
-        width: 25dvw;
-    }
-}
-
-/*Optimization for iPads*/
-@media (min-width: 835px) and (max-width: 1366px) {
     .emailPhoneNum {
-        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
     }
 }
+
+/* 390px - 429px: Small Phones */
+@media (max-width: 429px) and (min-width: 390px) {
+    .contactForm {
+        padding: 1rem 0;    }
+    .form {
+        width: 92.5%;
+        padding: 1rem 0.25rem;
+        border-radius: 0.75rem;
+    }
+    #formTitle {
+        display: none;
+    }
+    .altFormTitle {
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .emailPhoneNum {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    input, select, textarea {
+        font-size: 0.98rem;
+        padding: 0.7rem 0.7rem;
+    }
+    .consent-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .consentText{
+        width: 50% !important;
+        font-size: 0.8rem;
+    }
+    #submit, #reset {
+        width: 100%;
+        padding: 0.7rem 0;
+    }
+    .submit-reset {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Below 390px: Ultra Small Devices */
+@media (max-width: 389px) {
+    .form {
+        padding: 0.5rem 0.1rem;
+        border-radius: 0.5rem;
+    }
+    .altFormTitle {
+        font-size: 1rem;
+    }
+    input, select, textarea {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.5rem;
+    }
+}
+
+/* Accessibility: Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/*Don't remove this one line of text*/

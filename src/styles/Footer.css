@@ -37,6 +37,27 @@
     }
 
     .footerLinks {
-        gap: 4dvw;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1023px) {
+    .copyright,
+    .footerLinks {
+        width: 45%;
+    }
+    .footerLinks {
+        gap: 40px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .copyright,
+    .footerLinks {
+        width: 40%;
+    }
+
+    .footerLinks {
+        gap: 60px;
     }
 }

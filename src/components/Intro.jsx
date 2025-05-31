@@ -16,7 +16,7 @@ function Intro() {
                     <br/>
                     <br/>
                     <p className='introText'>
-                    Hi! I'm Ben Anthony (B.A.) Minervino, a 21-year-old Business Technology Management student at Toronto Metropolitan University. Outside of school, I enjoy hanging out with friends and my girlfriend, as well as photography, fitness, coding, gaming, and hockey. With an entrepreneurial and analytical mindset, I aim to build a career at the intersection of business and technology. I'm passionate about AI, software and game development, and finance, always driven by ambition, hard work, and a competitive edge.
+                    Hi! I'm Ben Anthony (B.A.) Minervino, a 22-year-old Business Technology Management student at Toronto Metropolitan University. Outside of school, I enjoy hanging out with friends and my girlfriend, as well as photography, fitness, coding, gaming, and hockey. With an entrepreneurial and analytical mindset, I aim to build a career at the intersection of business and technology. I'm passionate about AI, software and game development, and finance, always driven by ambition, hard work, and a competitive edge.
                     </p>
                     <br/>
                     <br/>

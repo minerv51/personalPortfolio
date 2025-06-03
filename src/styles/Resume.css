@@ -5,7 +5,7 @@
     align-items: center;
     background-color: #E5E9F0;
     color: #1B2A41;
-    height: 85dvh;
+    min-height: 85dvh;
 }
 
 .resumeTitle {
@@ -24,20 +24,67 @@
 
 #downloadButton {
     padding: 1dvh 2dvh;
-    border-radius: 2dvh;
+    border-radius: 50px;
     background-color: #E5E9F0;
     color: #1B2A41;
     font-weight: 550;
     font-size: 2.5dvh;
     border: 2px solid #1B2A41;
+    transition: all 0.3s ease-in-out;
 }
 
 #downloadButton:hover {
     background-color: #1B263B;
     color: white;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+.skillsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+   
+}
+
+.skillsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 45px 0px;
+}
+
+.skillItem {
+    border: 2px solid #1B2A41;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    height: 100px;
+    width: 500px;
+    padding: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skillItem:hover {
+    background-color: #1B263B;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.skillIcon {
+    font-size: 3rem;
+}
+
+.skillText {
+    width: 50%;
+}
 
 
 @media (max-width: 700px) {
@@ -49,5 +96,45 @@
 
     .iframe {
         width: 85dvw;
+    }
+}
+
+@media (max-width: 430px) {
+    .skillsContent h1 {
+        font-size: 1.5rem;
+    }
+
+    .skillsList {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .skillItem {
+        width: 325px;
+        height: 70px;
+        padding: 20px;
+        font-size: 0.65rem;
+        gap: 30px;
+    }
+
+    .skillIcon {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+    .skillsList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skillItem {
+        width: 475px;
+        font-size: 0.85rem;
+    }
+
+    .skillIcon {
+        font-size: 2.75rem;
     }
 }

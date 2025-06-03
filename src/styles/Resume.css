@@ -62,7 +62,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 45px;
     height: 100px;
     width: 500px;
     padding: 35px;
@@ -95,5 +96,45 @@
 
     .iframe {
         width: 85dvw;
+    }
+}
+
+@media (max-width: 430px) {
+    .skillsContent h1 {
+        font-size: 1.5rem;
+    }
+
+    .skillsList {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .skillItem {
+        width: 325px;
+        height: 70px;
+        padding: 20px;
+        font-size: 0.65rem;
+        gap: 30px;
+    }
+
+    .skillIcon {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+    .skillsList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skillItem {
+        width: 475px;
+        font-size: 0.85rem;
+    }
+
+    .skillIcon {
+        font-size: 2.75rem;
     }
 }

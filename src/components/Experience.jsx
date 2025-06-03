@@ -7,7 +7,7 @@ function Experience() {
             company: "OmniActus",
             role: "CEO | Founder",
             type: "Self-Employed",
-            period: "April 2024 - Present",
+            period: "April 2025 - Present",
             description: "OmniActus is a technology solutions company I founded to help small businesses and professionals make a real impact online. Through OmniActus, I have gained hands-on experience across web development, branding, cloud solutions, client communications, and project management. My work has included designing and building modern websites, developing digital tools, and advising clients on technology strategies to improve their operations and online presence. I am proud to lead projects that drive innovation, streamline workflows, and help clients achieve their business goals in today’s digital landscape."
         },
         {

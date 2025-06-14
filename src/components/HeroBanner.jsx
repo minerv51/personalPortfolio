@@ -18,7 +18,11 @@ function HeroBanner() {
                 </p>
                 <br/>
                 <br/>
-                <h3><Link to="/resume" role='button'>See My Resume</Link></h3>
+                <h3>
+                    <Link to="/resume" className='heroButton'>
+                        My Resume
+                    </Link>
+                </h3>
             </div>
             <img className='heroImage' src={heroImage} alt="A portrait of a man with slicked back dark hair, a trimmed beard, wearing a light blue-green shirt with a transparent bacground." loading='lazy'/>
         </div>

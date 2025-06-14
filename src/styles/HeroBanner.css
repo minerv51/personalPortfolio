@@ -43,7 +43,9 @@
     /*mask-image: linear-gradient(to bottom, black 65%, transparent 100%);*/
 }
 
-
+.heroButton {
+    transition: all 0.3s ease-in-out;
+}
 
 /*Styling for small phones*/
 @media (max-width: 700px) {
